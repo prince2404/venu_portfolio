@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <div id="header">
@@ -13,15 +14,24 @@
                 <source src="images/background_video.mp4" type="video/mp4">
 
             </video>
+            
             <nav>
-                <img src="images/logo.png" class="logo"/>
+                <div class="social-icons">
+                    <a href=""><i class="info-1 fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-vimeo"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <!-- <img src="images/logo.png" class="logo"/> -->
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">CONTACT</a></li>
                     
                 </ul>
+
+                <!-- <i class="light-icon fa-regular fa-sun" id="icon"></i> -->
                 
             </nav>
 
@@ -38,6 +48,80 @@
 
     <!-- ------about------ -->
 
+    <div id="about">
+        <div class="container">
+            <div class="about-row">
+                <div class="about-col-1">
+                    <img src="images/about-image.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>In the vast world of visual storytelling, photographers and filmmakers hold the power to  capture moments, evoke emotions, and tell compelling narratives that resonate with audiences. A photographer, through the lens of their camera, freezes time, creating images that can speak a thousand words. Their keen eye for detail, lighting, and composition transforms ordinary scenes into extraordinary art. They possess the ability to see beauty in the mundane, capturing fleeting moments that might otherwise go unnoticed. Every click of the shutter is a testament to their creativity and technical prowess, whether it's a candid street shot, a breathtaking landscape, or an intimate portrait.
+
+                        On the other hand, filmmakers weave together a tapestry of images, sound, and storytelling to create moving pictures that captivate and inspire. They are the architects of visual narratives, meticulously planning each shot, angle, and frame to bring their vision to life. From the director who steers the creative ship, to the cinematographer who captures the essence of each scene, to the editor who pieces it all together, every role in filmmaking is crucial. A filmmaker's journey is often filled with challenges, from securing funding to managing a diverse team, but the end result—a finished film—is a powerful medium that can impact society, challenge perceptions, and ignite conversations.
+                        
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <i class="fa-solid fa-moon"></i>
+    <i class="fa-regular fa-sun"></i> -->
+
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="contact-row">
+                <div class="contact-col-1">
+                    <div class="contact-left-title">
+                        <h2>Get in Touch</h2>
+                        <hr/>
+                    </div>
+
+                    <div class="form-box">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                        
+                            <input type="hidden" name="access_key" value="3bf46604-6f65-484d-9a6a-ba873f38273a">
+                            <p class="cont-title">Name</p>
+                            <input type="text" name="name" class="contact-inputs" required>
+                            <p class="cont-title">Email</p>
+                            <input type="email" name="email" class="contact-inputs" required>
+                            <p class="cont-title">Message</p>
+                            <textarea name="message" class="contact-inputs" required></textarea>
+                            <button style="color: #6c6565; font-weight: 500;" type="submit"><i class="fa-regular fa-envelope"></i> Send Message</button>
+                        </form>
+
+                    </div>
+                    
+                    
+                </div>
+                <div class="contact-col-2">
+                    <div class="information">
+                        <p class="info info-1">Contact Information</p>
+                        <p class="info-1 num"><i class="fa-solid fa-phone"></i> +91-9310829812</p>
+                        <p class="info-1"><i class="fa-solid fa-envelope"></i> princeconnect2602@gmail.com</p>
+                    </div>
+                    <div class="follow">
+                        <p class="info info-1">Follow Me</p>
+                        <div class="social-icons">
+                            <a href=""><i class="info-1 fa-brands fa-whatsapp"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-vimeo"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+
+
+                        <!-- <i class=" info-1 ic fa-brands fa-whatsapp"></i>  <i class="ic fa-brands fa-instagram"></i>  <i class="ic fa-brands fa-vimeo"></i>  <i class="ic fa-brands fa-youtube"></i> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -49,6 +133,29 @@
             backSpeed:150,
             loop : true
         });
+
+        // --for light/dark mode----
+
+        // var icon = document.getElementById("icon");
+        // var box1 = document.getElementById("box-1");
+        // var box2 = document.getElementById("box-2");
+        // var box3 = document.getElementById("box-3");
+        // icon.onclick = function(){
+        //     document.body.classList.toggle("dark-theme");
+
+        //     if(document.body.classList.contains("dark-theme")){
+        //         icon.className = "light-icon fa-solid fa-moon";
+        //         box1.className = "contact-inputs-box"
+        //         box2.className = "contact-inputs-box"
+        //         box3.className = "contact-inputs-box"
+        //     }
+        //     else{
+        //         icon.className = "light-icon fa-regular fa-sun";
+        //         box1.className = "contact-inputs"
+        //         box2.className = "contact-inputs"
+        //         box3.className = "contact-inputs"
+        //     }
+        // }
     </script>
     
 </body>
