@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html{
@@ -22,6 +22,7 @@ html{
 body{
     background: #fff;
     color: #080808;
+    overflow-x: hidden;
 }
 
 #header{
@@ -32,7 +33,33 @@ body{
 }
 
 .container{
-    padding: 10px 10%;
+    padding: 10px 10px;
+}
+
+header{
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 55px;
+}
+
+.video-container{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    
+
+}
+
+.video-container video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 nav{
@@ -40,7 +67,8 @@ nav{
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px 8%;
+    padding: 20px 15px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,9 +81,49 @@ nav{
     
 } */
 
+.sub-head ul li{
+    list-style: none;
+}
+
+.head{
+    margin-right: 20px;
+}
+
+.head ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+.head ul li a{
+    color: #080808;
+
+    text-decoration: none;
+    
+
+    position: relative;
+
+}
+
+.name{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    
+}
+
+.name p{
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
 
 
-nav ul li{
+
+/* nav ul li{
     display: inline-block;
     list-style: none;
     margin-left: 40px;
@@ -67,13 +135,13 @@ nav ul li a{
     font-size: 18px;
     position: relative;
     font-family: 'Times New Roman', Times, serif;
-}
+} */
 
 
-nav ul{
+/* nav ul{
     flex: 1;
     text-align: right;
-}
+} */
 
 /* .light-icon{
     margin-left: 100px;
@@ -149,7 +217,7 @@ nav ul{
 
 /* -------about------- */
 
-#about{
+/* #about{
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -162,14 +230,14 @@ nav ul{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
+} */
 
 /* img{
     max-width: 100%;
     max-height: 100%;
 } */
 
-.about-col-1{
+/* .about-col-1{
     flex-basis: 35%;
 
 }
@@ -193,14 +261,14 @@ nav ul{
     font-weight: 600;
     color:#080808;
 }
-
+ */
 
 
 /* ------contact------- */
 
 
 
-#contact{
+/* #contact{
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -268,7 +336,7 @@ nav ul{
     border-radius: 5px;
     background-color: #fff;
 
-}
+} */
 
 /* .contact-inputs-box{
     width: 400px;
@@ -283,11 +351,11 @@ nav ul{
 
 } */
 
-.contact-left textarea{
+/* .contact-left textarea{
     height: 140px;
     padding-top: 15px;
     border-radius: 10px;
-}
+} */
 
 /* .contact-inputs:focus{
     border: 2px solid #ff994f;
@@ -306,8 +374,8 @@ nav ul{
     color:#666;
 } */
 
-.contact-left button{
-    /* display: flex; */
+/* .contact-left button{
+    
     width: 400px;
     align-items: center;
     text-align: center;
@@ -343,13 +411,13 @@ nav ul{
     color: #6c6565;
     
 }
+ */
 
 
-
-.information{
+/* .information{
     background-color: rgb(222, 213, 213);
     margin-top: 80px;
-    /* margin: 20px 0px; */
+    
     width: 100%;
     padding: 30px 0px 30px 5px;
     border-radius: 10px;
@@ -378,14 +446,14 @@ nav ul{
 
 .num{
     margin-bottom: 8px;
-}
+} */
 
 /* .ic{
     display: inline-block;
     margin-right: 5px;
 } */
 
-.social-icons{
+/* .social-icons{
     margin-top: 10px;
 }
 
@@ -400,4 +468,4 @@ nav ul{
 
 .social-icons a:hover{
     transform: translateY(-3px);
-}
+} */
