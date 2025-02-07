@@ -75,12 +75,6 @@ nav{
     flex-wrap: wrap;
 }
 
-/* .logo{
-    width: 70px;
-    height: 70px;
-    
-} */
-
 .sub-head ul li{
     list-style: none;
     margin-bottom: 5px;
@@ -195,14 +189,14 @@ nav{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-} */
+}
 
-/* img{
+img{
     max-width: 100%;
     max-height: 100%;
-} */
+}
 
-/* .about-col-1{
+.about-col-1{
     flex-basis: 35%;
 
 }
@@ -225,8 +219,8 @@ nav{
     font-size: 60px;
     font-weight: 600;
     color:#080808;
-}
- */
+} */
+
 
 
 /* ------contact------- */
@@ -418,19 +412,62 @@ nav{
     margin-right: 5px;
 } */
 
-/* .social-icons{
+.social-icons{
     margin-top: 10px;
 }
 
 .social-icons a{
     text-decoration: none;
-    font-size: 25px;
-    margin-right: 13px;
-    color: #6c6565;
+    font-size: 21px;
+    margin-right: 8px;
+    color:#080808;
     display: inline-block;
     transition: transform 0.5s;
 }
 
 .social-icons a:hover{
-    transform: translateY(-3px);
-} */
+    transform: translateY(-2px);
+}
+
+.extra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px;
+    text-align: center;
+}
+
+.extra-1{
+    margin-left: 25px;
+}
+
+.extra-1 ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.extra-1 ul li a{
+    text-decoration: none;
+    color: #080808;
+    position: relative;
+    font-size: 14px;
+}
+
+footer{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer p{
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.fa-copyright{
+    font-size: 10px;
+}
+
+
