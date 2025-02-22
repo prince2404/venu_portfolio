@@ -51,17 +51,16 @@
                     <source src="images/background_video.mp4" type="video/mp4">
     
                 </video>
-                <button id="play-full-video">watch full video</button>
+                <button id="play-full-video"><i class="fa-solid fa-play"></i> Full story here</button>
 
             </div>
 
             <div id="video-modal" class="modal">
+                <span class="close-btn">&times;</span>
                 <div class="modal-content">
-                    <span class="close-btn">&times;</span>
-                    <video id="full-video" controls>
+                   <video id="full-video" controls>
                         <source src="images/video2.mp4" type="video/mp4">
                     </video>
-
                 </div>
             </div>
             
@@ -199,7 +198,7 @@
                 previewVideo.play();
             });
             playButton.addEventListener('click', function () {
-                console.log('Button clicked'); // Add debugging
+                // console.log('Button clicked'); // Add debugging
                 modal.style.display = 'block';
                 fullVideo.play();
                 document.body.classList.add('modal-open');
@@ -207,8 +206,8 @@
             });
             closeBtn.addEventListener('click', function () {
                 modal.style.display = 'none';
-                fullVideo.pause();
-                fullVideo.currentTime = 0;
+                // fullVideo.pause();
+                // fullVideo.currentTime = 0;
                 document.body.classList.remove('modal-open');
                 previewVideo.play();
             });
