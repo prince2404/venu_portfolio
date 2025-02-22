@@ -47,19 +47,30 @@
             </header>
 
             <div class="video-container">
-                <video autoplay loop muted plays-inline class="background-video">
+                <video id="preview-video" autoplay loop muted plays-inline class="background-video">
                     <source src="images/background_video.mp4" type="video/mp4">
     
                 </video>
+                <button id="play-full-video">watch full video</button>
 
+            </div>
+
+            <div id="video-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <video id="full-video" controls>
+                        <source src="images/video2.mp4" type="video/mp4">
+                    </video>
+
+                </div>
             </div>
             
 
-            <div class="content">
+            <!-- <div class="content">
                 <p class="content-1">I'M A</p>
                 <p class="content-2"><span class="auto-text"></span></p>
                 
-            </div>
+            </div> -->
 
             
 
@@ -168,13 +179,55 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
+        
 
-        var typed = new Typed(".auto-text", {
-            strings:["PHOTOGRAPHER","FILM MAKER","VIDEO EDITOR"],
-            typeSpeed:150,
-            backSpeed:150,
-            loop : true
+        // var typed = new Typed(".auto-text", {
+        //     strings:["PHOTOGRAPHER","FILM MAKER","VIDEO EDITOR"],
+        //     typeSpeed:150,
+        //     backSpeed:150,
+        //     loop : true
+        // });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const playButton = document.getElementById('play-full-video');
+            const modal = document.getElementById('video-modal');
+            const closeBtn = document.querySelector('.close-btn');    
+            const fullVideo = document.getElementById('full-video');
+            const previewVideo = document.getElementById('preview-video');
+            
+            previewVideo.addEventListener('loadedmetadata', function() {
+                previewVideo.play();
+            });
+            playButton.addEventListener('click', function () {
+                console.log('Button clicked'); // Add debugging
+                modal.style.display = 'block';
+                fullVideo.play();
+                document.body.classList.add('modal-open');
+                previewVideo.play();
+            });
+            closeBtn.addEventListener('click', function () {
+                modal.style.display = 'none';
+                fullVideo.pause();
+                fullVideo.currentTime = 0;
+                document.body.classList.remove('modal-open');
+                previewVideo.play();
+            });
+            window.addEventListener('click', function (event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    fullVideo.pause();
+                    fullVideo.currentTime = 0;
+                    document.body.classList.remove('modal-open');
+                    previewVideo.play();
+                }
+            });
         });
+
+
+
+
+    
+        
 
        
     </script>
