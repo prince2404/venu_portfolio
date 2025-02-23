@@ -1,9 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Quicksand, sans-serif;
+    /* font-family: "Outfit", serif; */
     /* font-family: 'Poppins', sans-serif; */
+    font-family: "Montserrat", serif;
 }
+
 
 html{
     scroll-behavior: smooth;
@@ -104,8 +106,8 @@ header{
     border: none;
     padding: 7px 20px;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
@@ -226,7 +228,7 @@ nav{
 
     position: relative;
     font-size: 14px;
-    font-weight: 550;
+    font-weight: 450;
 }
 
 .head{
@@ -249,7 +251,7 @@ nav{
 
     position: relative;
     font-size: 14px;
-    font-weight: 550;
+    font-weight: 450;
 
 }
 
@@ -262,14 +264,12 @@ nav{
 }
 
 .name h1{
-    /* margin-left: 20px; */
-    /* padding-left: 20px; */
     font-size: 45px;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .name p{
-    font-weight: 750;
+    font-weight: 600;
     margin-bottom: -13px;
     font-size: 20px;
 }
@@ -370,7 +370,7 @@ nav{
 }
 
 .about-col-2 p{
-    font-weight: 550;
+    font-weight: 400;
     
 }
 
@@ -426,7 +426,7 @@ nav{
 
 .contact-col-2 p{
     color: #080808;
-    font-weight: 550;
+    font-weight: 400;
 }
 
 .contact-col-2 .hlo{
@@ -446,7 +446,7 @@ nav{
 }
 
 .contact-left-title p{
-    font-weight: 550;
+    font-weight: 400;
     color: #080808;
     font-size: 30px;
     margin-bottom: 20px;
@@ -462,7 +462,7 @@ nav{
     color: #6c6565;
     
     background-color: #f0efef;
-    font-weight: 550;
+    font-weight: 400;
 
 }
 
@@ -484,7 +484,7 @@ nav{
     margin-top: 3px;
     font-size: 15px;
     color: #080808;
-    font-weight: 550;
+    font-weight: 450;
     gap: 8px;
     border: 1px solid gray;
     background:  #fcfcfc;
@@ -499,7 +499,7 @@ nav{
 .contact-col-2 .info{
     margin-bottom: 7px;
     font-size: 17px;
-    font-weight: 550;
+    font-weight: 520;
     color: #080808;
 }
 
