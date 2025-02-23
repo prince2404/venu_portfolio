@@ -255,6 +255,75 @@ nav{
 
 }
 
+/* dropdown for films */
+.head ul li.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-content a {
+    color: #080808;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 450;
+    transition: background-color 0.3s;
+}
+.dropdown-content a:hover {
+    background-color: #f0efef;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* dropdown for photos */
+.head ul li.dropdown2 {
+    position: relative;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-content2 a {
+    color: #080808;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 450;
+    transition: background-color 0.3s;
+}
+.dropdown-content2 a:hover {
+    background-color: #f0efef;
+}
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+
 .name{
     /* align-items: center; */
     margin-bottom: 30px;
